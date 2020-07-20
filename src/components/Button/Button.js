@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
-class Button extends Component {
+// import Button from '@material-ui/core/Button';
+import {
+  Button,
+} from '@material-ui/core';
+
+class ButtonGoTo extends Component {
 
   handleGoToCheckout = () => {
     console.log('GOTO CHECKOUT');
@@ -13,9 +18,16 @@ class Button extends Component {
     console.log(this.props.history);
 
     return (
-      <button onClick={this.handleGoToCheckout}>Checkout NOW!!!</button>
+      <Button
+        size="large"
+        variant="outlined"
+        color="primary"
+        onClick={this.handleGoToCheckout}
+      >
+        Checkout NOW!!!
+      </Button>
     );
   }
 }
 
-export default withRouter(Button);
+export default withRouter(ButtonGoTo);
