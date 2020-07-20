@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from '../../Button/Button';
+import ButtonGoTo from '../../ButtonGoTo/ButtonGoTo';
 import Typography from '@material-ui/core/Typography';
 
 class Home extends Component {
@@ -7,7 +7,7 @@ class Home extends Component {
     return (
       <div className="container">
         <Typography variant="h3" component="h2">Home Page</Typography>
-        <Button></Button>
+        <ButtonGoTo></ButtonGoTo>
       </div>
     );
   }
