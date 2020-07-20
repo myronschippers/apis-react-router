@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <header className="appBar">
         <img className="logo" src={logo} alt="logo" />
-        <h1 className="primaryHdg">React Local State and Props</h1>
+        <h1 className="primaryHdg">React Router (S.P.A.)</h1>
       </header>
     );
   }
