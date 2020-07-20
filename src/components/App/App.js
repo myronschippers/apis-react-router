@@ -9,15 +9,15 @@ import Checkout from '../pages/Checkout/Checkout';
 class App extends React.Component {
   render() {
     return (
-      <Router>
-        <div>
-          <Header />
+      <div>
+          <Router>
+            <Header />
 
-          <Route exact path="/" component={Home} />
-          <Route path="/inventory" component={Inventory} />
-          <Route path="/checkout" component={Checkout} />
+            <Route exact path="/" component={Home} />
+            <Route path="/inventory" component={Inventory} />
+            <Route path="/checkout" component={Checkout} />
+          </Router>
         </div>
-      </Router>
     );
   }
 }
